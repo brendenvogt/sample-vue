@@ -1,18 +1,31 @@
 <template>
     <div>
-        <p>{{newuser}}</p>
-        <input v-model="newuser">
+        <p>{{userx}}</p>
+        <input v-model="userx">
     </div>
 </template>
 
 <script>
-// <Footer user="Hello" />
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   props: ['user'],
   data() {
     return {
-      newuser: this.user,
+      userx: this.user,
     };
   },
-};
+  methods: {
+    hello() {
+      console.log('hello');
+    },
+  },
+});
+
 </script>
+
+<style scoped>
+input {
+    color: gray
+}
+</style>
