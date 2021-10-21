@@ -19,3 +19,9 @@ module.exports = {
   },
 };
 </script>
+
+<style scoped>
+p {
+  color: gray;
+}
+</style>
