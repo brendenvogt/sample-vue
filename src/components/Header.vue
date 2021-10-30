@@ -1,13 +1,20 @@
 <template>
-    <h1>Welcome</h1>
+    <h1 :style="styles">Welcome {{name}} how are you</h1>
 </template>
 
-<script lang="ts">
-import { Vue } from 'vue-class-component';
+<script>
 
-export default class Header extends Vue {
-
-}
+export default {
+  data() {
+    return {
+      styles: {
+        color: 'blue',
+        fontSize: '50px',
+      },
+      name: 'Brenden',
+    };
+  },
+};
 </script>
 
 <style scoped>

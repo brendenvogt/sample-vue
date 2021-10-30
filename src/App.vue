@@ -1,4 +1,5 @@
 <template>
+  <Header/>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
@@ -6,7 +7,20 @@
     <router-link to="/counter">Counter</router-link>
   </div>
   <router-view/>
+  <Footer user="Hello"/>
 </template>
+
+<script>
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
+
+export default {
+  components: {
+    Footer,
+    Header,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
